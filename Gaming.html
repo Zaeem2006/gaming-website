@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaeem's Gaming Zone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../Zlogo.jpg" alt="Zaeem's Gaming Zone Logo">
+                <h1>Zaeem's <span>Gaming Zone</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Unleash the Gamer in You</h1>
+            <p>Dive into a world of thrilling games and epic adventures.</p>
+            <a href="#games" class="btn btn-primary">Explore Games</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>
+                    At <strong>Zaeem's Gaming Zone</strong>, we merge passion and technology to deliver an unparalleled gaming experience. Join us as we explore new horizons in the gaming world.
+                </p>
+                <p>
+                    Whether you're a casual gamer or a professional enthusiast, we have something special for everyone.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games" id="games">
+        <div class="container">
+            <h2>Our Featured Games</h2>
+            <div class="game-grid">
+                <div class="game" onclick="showGameDetails(this, 'PUBG', 'An action-packed battle royale game where survival is the ultimate goal.', ['Windows 10', '8GB RAM', '2GB Graphics Card'])">
+                    <img src="../PUBG.jpg" alt="PUBG">
+                    <p>PUBG</p>
+                    <div class="game-details"></div>
+                </div>
+                <div class="game" onclick="showGameDetails(this, 'Call of Duty', 'Experience intense warfare with cinematic realism.', ['Windows 10', '16GB RAM', '4GB Graphics Card'])">
+                    <img src="../COD.jpg" alt="Call of Duty">
+                    <p>Call of Duty</p>
+                    <div class="game-details"></div>
+                </div>
+                <div class="game" onclick="showGameDetails(this, 'Need for Speed', 'Fast cars, thrilling races, and pure adrenaline.', ['Windows 8.1', '6GB RAM', '1GB Graphics Card'])">
+                    <img src="../NFS.jpg" alt="Need for Speed">
+                    <p>Need for Speed</p>
+                    <div class="game-details"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions? We'd love to hear from you!</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:info@gamingzone.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2024 Zaeem's Gaming Zone. All Rights Reserved.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Subscribe to our newsletter">
+                <button class="btn btn-secondary">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
